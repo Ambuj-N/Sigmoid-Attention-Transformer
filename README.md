@@ -31,8 +31,8 @@ Both models are trained on a toy copy task.
 The setup is minimal. You only need PyTorch and Matplotlib.
 
 ```bash
-git clone https://github.com/yourusername/mini-sigmoid-transformer.git
-cd mini-sigmoid-transformer
+git clone https://github.com/Ambuj-N/Sigmoid-Attention-Transformer.git
+cd Sigmoid-Attention-Transformer
 pip install -r requirements.txt
 python train.py
 ```
