@@ -12,7 +12,7 @@ def get_batch(batch_size=32, seq_length=16, d_model=8):
 def main():
     print("Initializing models...")
     d_model = 8
-    learning_rate = 0.01
+    learning_rate = 0.0001        
     iterations = 300
 
     sigmoid_model = SigmoidTransformerBlock(d_model)
@@ -43,7 +43,7 @@ def main():
         opt_softmax.step()
         soft_losses.append(loss_soft.item())
 
-        if (i + 1) % 50 == 0:
+        if (i + 1) % 5 == 0:
             print(f"Step {i+1:<4} | Sigmoid Loss: {loss_sig.item():.4f} | Softmax Loss: {loss_soft.item():.4f}")
 
     print("Training complete! Generating performance graph...")
